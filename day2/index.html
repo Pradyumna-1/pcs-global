@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <div class="form-container">
+      <form>
+        <div class="form-row">
+          <label>FIRST NAME</label>
+          <input
+            type="text"
+       
+            title="max 30 characters a-z and A-Z"
+          />  (max 30 characters a-z and A-Z)
+        </div>
+
+        <div class="form-row">
+          <label>LAST NAME</label>
+          <input
+            type="text"
+            maxlength="30"
+          
+            title="max 30 characters a-z and A-Z"
+          /> (max 30 characters a-z and
+          A-Z)
+        </div>
+
+        <div class="form-row">
+          <label>DATE OF BIRTH</label>
+          <select name="day">
+            <option>Day</option>
+          </select>
+          <select name="month">
+            <option>Month</option>
+          </select>
+          <select name="year">
+            <option>Year</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>EMAIL ID</label>
+          <input type="email" />
+        </div>
+
+        <div class="form-row">
+          <label>MOBILE NUMBER</label>
+          <input
+            type="text"
+          
+            title="10 digit number"
+          />
+        </div>
+
+        <div class="form-row">
+          <label>GENDER</label>
+          <input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+        </div>
+
+        <div class="form-row">
+          <label>ADDRESS</label>
+          <textarea rows="10" cols="20"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label>CITY</label>
+          <input
+            type="text"
+       
+            title="max 30 characters a-z and A-Z"
+          />
+        </div>
+
+        <div class="form-row">
+          <label>PIN CODE</label>
+          <input
+            type="text"
+         
+            title="6 digit number"
+          /> (6 digit number)
+        </div>
+
+        <div class="form-row">
+          <label>STATE</label>
+          <input
+            type="text"
+       
+            title="max 30 characters a-z and A-Z"
+          /> (max 30 characters a-z and
+          A-Z)
+        </div>
+
+        <div class="form-row">
+          <label>COUNTRY</label>
+          <input type="text" value="India" readonly />
+        </div>
+
+        <div class="form-row">
+          <label>HOBBIES</label>
+          <input type="checkbox" name="hobbies" value="drawing" /> Drawing
+          <input type="checkbox" name="hobbies" value="singing" /> Singing
+          <input type="checkbox" name="hobbies" value="dancing" /> Dancing
+          <input type="checkbox" name="hobbies" value="sketching" /> Sketching
+          <br />
+          <label></label>
+          <input type="checkbox" name="hobbies" value="others" /> Others
+        </div>
+
+        <!-- Qualification Section -->
+        <div class="qualification-container">
+          <label>QUALIFICATION</label>
+          <table class="qualification-table">
+            <thead>
+              <tr>
+                <th>Sl.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" name="board1" /></td>
+                <td><input type="number" name="percentage1"  /></td>
+                <td><input type="text" name="year1" /></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" name="board2" /></td>
+                <td><input type="number" name="percentage2"/></td>
+                <td><input type="text" name="year2" /></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" name="board3" /></td>
+                <td><input type="number" name="percentage3"/></td>
+                <td><input type="text" name="year3" /></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" name="board4" /></td>
+                <td><input type="number" name="percentage4" /></td>
+                <td><input type="text" name="year4" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="form-row">
+          <label>COURSES APPLIED FOR</label>
+          <input type="radio" name="course" value="bca" /> BCA
+          <input type="radio" name="course" value="bcom" /> B.Com
+          <input type="radio" name="course" value="bsc" /> B.Sc
+          <input type="radio" name="course" value="ba" /> B.A
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
